@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floating_mic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".PropertyAnimatedActivity" >
+
+
+
+
+    <ImageView
+        android:id="@+id/micCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mic_circle" />
+
+    <ImageView
+        android:id="@+id/floatingMic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/floatingmic2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

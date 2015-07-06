@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/phoneAppTile"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:background="@color/projector_transparent"
+        />
+
+    <TextView
+        android:id="@+id/phoneShadow"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/app_drop_shadow"
+        />
+
+
+
+    <TextView
+        android:id="@+id/phoneTileHeader"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/header_blue"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Phone"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical"
+
+        />
+
+    <ImageView
+        android:id="@+id/textIcon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/phone_white"
+        android:layout_alignRight="@+id/phoneTileHeader"
+        />
+
+
+    <TextView
+        android:id="@+id/last"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/phoneTileHeader"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Missed"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/missedCallInfo"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/last"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="1"
+        android:gravity="center" />
+
+
+<!-- if no missed calls, display most recent call
+
+    <TextView
+        android:id="@+id/last"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/phoneTileHeader"
+        android:textColor="@color/header_blue"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Recent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/phoneName"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/last"
+        android:textSize="16sp"
+        android:textColor="@color/header_blue"
+        android:text="Leslie B."
+        android:gravity="center" />
+
+        -->
+
+</RelativeLayout>

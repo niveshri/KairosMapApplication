@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/projector_transparent"
+    tools:context="io.kairos.maps.ui.KairosActivity"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/navigationFrameLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/notificationFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <org.lucasr.twowayview.TwoWayView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/appDeckGridView"
+                android:orientation="horizontal"
+                android:drawSelectorOnTop="false"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                tools:context=".KairosActivity"
+                android:divider="@color/projector_transparent"
+                android:dividerHeight="10sp"
+                android:cacheColorHint="@color/projector_transparent"
+                android:listSelector="@color/projector_transparent"
+                />
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/appInfoFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/notificationFrameLayout"
+                 />
+
+            <TextView
+                android:id="@+id/triviaBoxFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:alpha="0.75"
+                android:textSize="18sp"
+                android:text="Giant Eagle - 10% off on Membership"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contextLinearLayout"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/contextImageView"
+            android:layout_width="0dp"
+            android:layout_weight="0.16"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/contextTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.84"
+            android:layout_height="match_parent"
+            android:textColor="@color/cyan"
+            android:textSize="12sp"
+            android:text="0123456789ab"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

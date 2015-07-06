@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="projector_transparent">#ff000000</color>
+    <color name="black">#ff000000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="red">#ffff0000</color>
+    <color name="cyan">#ff00ffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+   <!-- <color name="orange1">#fffd4000</color>
+    <color name="orange2">#FFFF5500</color>
+    <color name="orange3">#FFFD6F16</color> -->
+    <color name="cyan_translucent">#3300ffff</color>
+    <color name="white_translucent1">#05ffffff</color>
+    <color name="blue_translucent">#302878ff</color>
+    <color name="white_translucent3">#15ffffff</color>
+
+    <color name="header_blue">#ff0086d4</color>
+    <color name="navHeaderColor">#ff009486</color>
+    <color name="textHeaderColor">#fffd8d00</color>
+    <color name="musicHeaderColor">#ff3f51b5</color>
+    <color name="kairos_item_text_color">#3300ffff</color>
+    <color name="mic_color">#fff91d54</color>
+    <color name="mic_color2">#ff02feff</color>
+    <color name="light_green">#ff02fd98</color>
+
+
+
+</resources>

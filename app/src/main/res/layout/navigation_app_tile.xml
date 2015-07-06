@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="135dp"
+    android:layout_height="135dp">
+
+
+    <TextView
+        android:id="@+id/navAppTile"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:background="@color/projector_transparent"
+        />
+
+    <TextView
+        android:id="@+id/navShadow"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/app_drop_shadow"
+        />
+
+
+
+    <TextView
+        android:id="@+id/navTileHeader"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/navHeaderColor"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Navigation"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical"
+
+        />
+
+    <ImageView
+        android:id="@+id/textIcon"
+        android:layout_width="9dp"
+        android:layout_height="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/navigation_white"
+        android:layout_alignRight="@+id/navTileHeader"
+        />
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_below="@id/navTileHeader"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Off"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        />
+
+
+  <TextView
+        android:id="@+id/navName"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/location"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="123 Fake St."
+        android:gravity="center" />
+
+
+<!-- for when navigation is off, but text size needs work
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/navTileHeader"
+        android:textColor="@color/navHeaderColor"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Enter destination"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        />
+
+    -->
+
+</RelativeLayout>

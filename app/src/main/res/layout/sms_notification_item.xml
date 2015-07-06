@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:background="@color/projector_transparent"
+    >
+
+    <ImageView
+        android:id="@+id/contactThumbnailImageView"
+        android:src="@drawable/sms_popup"
+        android:layout_width="40dp"
+        android:layout_height="90dp"
+        android:paddingLeft="5dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/smsSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textHeaderColor"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Name"
+        android:paddingRight="30dp"
+        android:paddingLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/contactThumbnailImageView"
+        android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        />
+
+    <TextView
+        android:id="@+id/smsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:text="Text Message Content"
+        android:layout_below="@id/smsSender"
+        android:layout_alignStart="@id/smsSender"
+        />
+
+    <ImageView
+        android:id="@+id/whiteLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="?android:attr/listPreferredItemHeight"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="When the levee breaks"
+        android:gravity="center_horizontal"
+        android:textColor="@color/musicHeaderColor"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/songArtist"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Led Zeppelin"
+        android:layout_below="@+id/songName"
+        android:gravity="center|top"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/songArtist"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="36dp"
+            android:src="@drawable/play"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:textColor="@color/header_blue"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/shuffleButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="36dp"
+            android:src="@drawable/shuffle"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:textColor="@color/header_blue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

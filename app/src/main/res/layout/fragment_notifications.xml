@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/projector_transparent"
+    android:tag="fragment_notifications"
+    android:gravity="right"
+    >
+
+    <ImageView
+        android:id="@+id/textNotificationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/sms_white"
+
+        />
+
+    <TextView
+        android:id="@+id/textNotificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="-4dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/emailNotificationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/email_white"
+        />
+
+    <TextView
+        android:id="@+id/emailNotificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="-4dp"
+        />
+
+    <ImageView
+        android:id="@+id/callsNotificationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/phone_white"
+        />
+
+    <TextView
+        android:id="@+id/callsNotificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="-4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:background="@color/projector_transparent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone"
+        android:id="@+id/topbar"
+        android:background="#ff0092d5"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="card1"
+        android:id="@+id/card1"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="card2"
+        android:id="@+id/card"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:mode="twoLine"
+    android:background="@color/projector_transparent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:id="@+id/navigationNameTextView"
+        android:textColor="@color/navHeaderColor"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Home"
+        android:paddingRight="30dp"
+        android:paddingLeft="0dp"
+
+        />
+
+    <TextView
+        android:id="@+id/navigationAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationNameTextView"
+        android:layout_alignStart="@id/navigationNameTextView"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:text="5822 Beacon Street"
+        />
+
+    <ImageView
+        android:id="@+id/navigationIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignRight="@+id/navigationNameTextView"
+        android:layout_alignTop="@+id/navigationNameTextView"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/whiteLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginTop="?android:attr/listPreferredItemHeight"
+    />
+
+</TwoLineListItem>

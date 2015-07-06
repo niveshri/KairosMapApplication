@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="calling_fragment"
+    tools:context="io.kairos.maps.apps.calling.CallingFragment"
+    >
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/header_blue"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Phone"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <!-- Discuss with Leslie -->
+    <!--<TextView-->
+        <!--android:id="@+id/phoneHeader"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@color/header_blue"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textStyle="normal"-->
+        <!--android:text="Phone"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--/>-->
+
+    <!--<io.kairos.maps.speechrec.MicButton-->
+        <!--android:id="@+id/micButton"-->
+        <!--android:layout_width="18.67dp"-->
+        <!--android:layout_height="25.33dp"-->
+        <!--android:layout_alignRight="@id/phoneHeader"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:textSize="22sp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:onClick="onMicButtonClicked"-->
+        <!--android:clickable="true"-->
+        <!--android:background="@drawable/mic2"-->
+        <!--style="?android:attr/borderlessButtonStyle"-->
+        <!--/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_drop_shadow"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10.5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <io.kairos.maps.speechrec.MicButton
+        android:id="@+id/micButton"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_marginTop="17.5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_below="@id/micButton"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView android:id="@id/android:empty"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_contacts"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/header_blue"
+        android:layout_below="@+id/micButton"
+        android:textSize="18dp"
+        />
+
+
+
+
+</RelativeLayout>

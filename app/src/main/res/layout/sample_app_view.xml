@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/projector_transparent" >
+
+
+
+
+
+    <ImageView
+        android:id="@+id/mail_icon"
+        android:layout_width="56dp"
+        android:layout_height="36.5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:layout_toRightOf="@+id/navigation"
+        android:src="@drawable/ic_mailicon2"
+        android:clickable="true"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/mail"
+        android:layout_width="56dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/navigation"
+        android:layout_below="@+id/mail_icon"
+        >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:id="@+id/msg_icon"
+        android:layout_width="57dp"
+        android:layout_height="45.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/mail_icon"
+        android:src="@drawable/ic_txticon2"
+        android:clickable="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/txt"
+        android:layout_width="57dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mail_icon"
+        android:layout_below="@+id/msg_icon"
+        >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/msg_icon"
+        android:src="@drawable/ic_phoneicon"
+        android:clickable="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/phone"
+        android:layout_width="58dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/msg_icon"
+        android:layout_below="@+id/phone_icon"
+        >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_centerVertical="true"
+
+        android:background="@color/projector_transparent"
+        style="?android:attr/buttonBarStyle">
+
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:text="App tile 1"
+                android:id="@+id/app1"
+                android:clickable="true"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+            <Button
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:text="App Tile 2"
+                android:id="@+id/app2"
+                android:clickable="true"
+                android:layout_gravity="center_horizontal"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+            <Button
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:text="App Tile 3"
+                android:id="@+id/app3"
+                android:clickable="true"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+            <Button
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:text="App Tile 4"
+                android:id="@+id/app4"
+                android:clickable="true"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+            <Button
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:text="App Tile 5"
+                android:id="@+id/app5"
+                android:clickable="true"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+            <Button
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:text="App Tile 6"
+            android:id="@+id/app6"
+            android:clickable="true"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+            <Button
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:text="App Tile 7"
+                android:id="@+id/app7"
+                android:clickable="true"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:layout_width="700dp"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Navigation View Goes Here"
+        android:id="@+id/navigation"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:paddingStart="160dp"
+        android:paddingEnd="100dp"
+        android:paddingTop="275dp" />
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KairosMaps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_api_test">ApiTestActivity</string>
+    <string name="destinationHint">Enter Destination...</string>
+    <string name="action_settings">Settings</string>
+    <string name="gmaps_key">AIzaSyAf5SCAtNJmw1aUJknQhPzXaoUKdOokruY</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="route_text">Go!</string>
+    <string name="title_activity_uiexperiment">UIExperimentActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_mock_location">MockLocationActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_kairos">KairosActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_open_gl">OpenGLActivity</string>
+    <string name="title_activity_voice">VoiceActivity</string>
+    <string name="no_contacts">No Contacts Found</string>
+    <string name="no_music">No Music Found</string>
+    <string name="no_saved_locations">No Saved Locations</string>
+
+</resources>

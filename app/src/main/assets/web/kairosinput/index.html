@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kairos Imput App</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="touch-area">
+        <div class="text">
+          Trackpad
+          <div class="direction">
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="server-status">
+          Server Status: <span class="status"></span>
+        </div>
+        <div class="buttons">
+          <div class="row">
+            <span class="button a" data-action="a">A</span>
+          </div>
+          <div class="row">
+            <span class="button b" data-action="b">B</span>
+            <span class="button select" data-action="select">Select</span>
+          </div>
+          <div class="row">
+            <span class="button menu" data-action="Menu">Menu</span>
+          </div>
+        </div>
+        <div class="lock-scroll">
+          <button class="lock">Toggle Scroll Lock</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="js/vendor/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="js/vendor/hammer.min.js" type="text/javascript"></script>
+    <script src="js/vendor/reconnecting-websocket.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="kairos_app_texting"
+    tools:context="io.kairos.maps.apps.texting.MusicFragment">
+
+    <!--move mic button to fragment_music.xml-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_drop_shadow"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10.5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <io.kairos.maps.speechrec.MicButton
+        android:id="@+id/micButton"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_below="@id/micButton"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView android:id="@id/android:empty"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_music"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/musicHeaderColor"
+        android:textSize="18dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/micButton"
+        />
+
+</RelativeLayout>

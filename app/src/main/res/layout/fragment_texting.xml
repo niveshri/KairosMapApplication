@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="fragment_texting"
+    tools:context="io.kairos.maps.apps.texting.TextingFragment">
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/textHeaderColor"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Messages"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_drop_shadow"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10.5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <io.kairos.maps.speechrec.MicButton
+        android:id="@+id/micButton"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_marginTop="17.5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentRight="true"
+
+        />
+
+  <ListView
+        android:id="@+id/textsListView"
+        android:layout_below="@id/micButton"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+</RelativeLayout>

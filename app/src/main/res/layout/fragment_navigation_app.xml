@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.kairos.maps.apps.navigation.NavigationAppFragment"
+    android:tag="fragment_navigation_app"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/navHeaderColor"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Navigation"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/routingCancelLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/textHeader"
+        android:background="@color/projector_transparent"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:id="@+id/routingDestinationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="5822 Beacon Street"
+            android:textColor="@color/navHeaderColor"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/routingCancelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal|top"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/whiteLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/mockRouteButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/routingCancelLinearLayout"
+        android:text="Mock Route"
+        android:textSize="22dp"
+        android:background="@color/projector_transparent"
+        android:textColor="@color/white"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/navigationSelectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_drop_shadow"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="10.5dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <io.kairos.maps.speechrec.MicButton
+            android:id="@+id/micButton"
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/micButton"
+            />
+        <!--android:layout_below="@+id/navHeader"-->
+
+        <TextView android:id="@id/android:empty"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_saved_locations"
+            android:textColor="@color/navHeaderColor"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/micButton"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

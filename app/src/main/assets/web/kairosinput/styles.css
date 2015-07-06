@@ -1,0 +1,123 @@
+body {
+  background-color: #494949;
+  font-family: sans-serif;
+}
+
+.app {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.touch-area {
+  width: 50%;
+  height: 80%;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 20px;
+  background: #757b83;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: inset 0 2px 3px #99a0ab,
+              inset 0 -2px 3px rgba(0,0,0,0.3),
+              0 1px 1px #52565c;
+}
+
+.touch-area .text {
+  color: #404040;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px;
+  height: 10px;
+  padding-top: 35%;
+}
+
+.direction {
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+.sidebar {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: 50px;
+  width: 45%;
+}
+
+.sidebar .server-status {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #d0d0d0
+}
+
+.sidebar .server-status .status.success {
+  color: #6ce324;
+}
+
+.sidebar .server-status .status.error {
+  color: #ee494c;
+}
+
+.buttons {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.buttons .row {
+  margin-bottom: 20px;
+}
+
+.buttons .button {
+  width: 100px;
+  background-color: #44c767;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 35px;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+.buttons .button:active {
+  position: relative;
+  top: 1px;
+}
+
+.buttons .button.b {
+  margin-right: 15px;
+}
+
+.buttons .button.select {
+  margin-left: 30px;
+}
+
+.sidebar .lock-scroll {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.sidebar .lock-scroll .lock {
+  width: 350px;
+  background-color: #566cc7;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #244a9a;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 20px;
+  padding: 10px 50px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin: 0 auto;
+}

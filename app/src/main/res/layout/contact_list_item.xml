@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_border"
+    >
+
+    <ImageView
+        android:id="@+id/contactThumbnailImageView"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:src="@drawable/default_avatar"
+        android:layout_height="90dp"
+        android:paddingLeft="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/contactNameTextView"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="90dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:layout_marginBottom="0dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:text="Chuck Norris"
+        />
+
+
+
+<!-- this is what the recent calls "5 mins ago", etc. would look like, but needs to be aligned properly /given height and width relative to name
+    <TextView
+        android:id="@+id/recentCallTextView"
+        android:fontFamily="sans-serif"
+        android:textSize="22sp"
+        android:text="5 mins ago"
+        android:textColor="#ff999999"
+       />
+       -->
+
+  <!--to do: avatars display as circle, default avatars for contacts are circle with first letter of name -->
+</LinearLayout>

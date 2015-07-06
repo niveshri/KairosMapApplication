@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/musicAppTile"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:background="@color/projector_transparent"
+        />
+
+    <TextView
+        android:id="@+id/musicShadow"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/app_drop_shadow"
+        />
+
+    <TextView
+        android:id="@+id/musicTileHeader"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/musicHeaderColor"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:text="Music"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical"
+        />
+
+    <ImageView
+        android:id="@+id/musicIcon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/music_white"
+        android:layout_alignRight="@+id/musicTileHeader"
+        />
+
+
+    <TextView
+        android:id="@+id/musicPrimaryInfo"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/musicTileHeader"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Hendrix"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+
+
+    <TextView
+        android:id="@+id/musicSecondaryInfo"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/musicPrimaryInfo"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="Highway Chile"
+        android:gravity="center"
+        />
+
+
+
+</RelativeLayout>

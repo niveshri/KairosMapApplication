@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Add minor padding in the image -->
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="@color/mic_color" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/mic_img"
+            android:gravity="center"
+            />
+    </item>
+</layer-list>
